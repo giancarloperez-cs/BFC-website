@@ -1,0 +1,334 @@
+/*FONTS*/
+h1, h2, h3, .nav-link, .button{
+   font-family: 'Oswald', sans-serif;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+.hero-title{
+    font-family: 'Anton', sans-serif;
+}
+body, p, .fighter-bio{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #121212;
+    color: #f5f5f5;
+}
+/*NAVBAR*/
+/*NAVBAR*/
+.nav{
+    background: rgb(21, 21, 21);
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    position: sticky;
+}
+.nav-container{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    justify-content: space-between;
+    position: relative;
+}
+.nav-left, .nav-right{
+    display: flex;
+    gap: 32px;
+}
+.nav a{
+    color: #f5f5f5;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+.nav a:hover{
+    color: #e41f25;
+}
+.nav-logo img{
+    height: 34px;
+    display: block;
+}
+.nav-logo img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.mobile-toggle{
+    display: none;
+}
+
+/*NAVBAR*/
+/*NAVBAR*/
+/*FONTS*/
+h1, h2, h3, .nav-link, .button{
+   font-family: 'Oswald', sans-serif;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+.hero-title{
+    font-family: 'Anton', sans-serif;
+}
+body, p, .fighter-bio{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #121212;
+    color: #f5f5f5;
+}
+/*NAVBAR*/
+/*NAVBAR*/
+.nav{
+    background: rgb(21, 21, 21);
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    position: sticky;
+}
+.nav-container{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    justify-content: space-between;
+    position: relative;
+}
+.nav-left, .nav-right{
+    display: flex;
+    gap: 32px;
+}
+.nav a{
+    color: #f5f5f5;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+.nav a:hover{
+    color: #e41f25;
+}
+.nav-logo img{
+    height: 34px;
+    display: block;
+}
+.nav-logo img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.mobile-toggle{
+    display: none;
+}
+/* Mobile toggle button - hidden on desktop */
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ------------------ DESKTOP ------------------ */
+@media (min-width: 993px) {
+    .nav-left,
+    .nav-right {
+        display: flex; /* inline links */
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .nav-logo {
+        position: static;
+        transform: none;
+    }
+
+    .mobile-toggle {
+        display: none;
+    }
+}
+
+/* ------------------ TABLET ------------------ */
+@media (max-width: 992px) and (min-width: 601px) {
+    .nav-left,
+    .nav-right {
+        display: none; /* hide links initially */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 16px;
+        background: rgb(21, 21, 21);
+        position: absolute;
+        top: 70px; /* navbar height */
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-left.active,
+    .nav-right.active {
+        display: flex;
+    }
+
+    /* Mobile toggle appears on tablet */
+    .mobile-toggle {
+        display: block;
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1000;
+    }
+
+    /* Center logo */
+    .nav-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* ------------------ MOBILE ------------------ */
+@media (max-width: 600px) {
+    .nav-left,
+    .nav-right {
+        display: none; /* hide links initially */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 12px;
+        background: rgb(21, 21, 21);
+        position: absolute;
+        top: 70px; /* navbar height */
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-left.active,
+    .nav-right.active {
+        display: flex;
+    }
+
+    /* Mobile toggle button */
+    .mobile-toggle {
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1000;
+    }
+
+    /* Center logo on mobile */
+    .nav-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+/*NAVBAR END*/
+/*NAVBAR END*/
+/* ===========================
+   HERO SECTION — MOBILE FIRST
+   =========================== */
+.hero-card-section {
+    display: flex;
+    flex-direction: column; /* stack image and card */
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+/* 16:9 responsive wrapper for image */
+.top-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+}
+
+/* Image styling */
+.top-image-wrapper img.top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Card styling */
+.card-wrapper {
+    width: 90%;
+    max-width: 600px; /* desktop max width */
+}
+
+.under-card .card {
+    background: #1e1e1e;
+    color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    padding: 20px;
+}
+.watch-button{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e41f25;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.watch-button:hover{
+    background-color: #c2181e;
+}
+#spotlight-card p{
+    font-size: 16px;
+}
+/* ===========================
+   DESKTOP LAYOUT (≥ 992px)
+   =========================== */
+@media (min-width: 992px) {
+
+    .hero-card-section {
+        align-items: flex-start; /* align left */
+        margin-top: 60px;
+        gap: 20px;
+    }
+
+    .top-image-wrapper {
+        width: 45%;       /* smaller width on desktop */
+        padding-top: 0;   /* remove 16:9 trick */
+        height: auto;
+    }
+
+    .top-image-wrapper img.top-image {
+        position: static;
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+        display: block;
+    }
+
+    .card-wrapper {
+        width: 45%;       /* match image width */
+        margin-top: 10px; /* space under image */
+    }
+}
