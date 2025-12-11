@@ -174,10 +174,16 @@ body{
         padding: 10px 0;
     }
 
-    .nav-left.active,
-    .nav-right.active {
-        display: flex;
-    }
+.nav-left.active,
+.nav-right.active {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    width: 100%;
+    background: rgb(21, 21, 21);
+    position: relative;
+}
 
     /* Mobile toggle appears on tablet */
     .mobile-toggle {
@@ -195,6 +201,7 @@ body{
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        z-index: 1001;
     }
 }
 
