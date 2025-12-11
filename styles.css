@@ -201,12 +201,20 @@ body{
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        z-index: 1001;
+        z-index: 100
     }
 }
 
 /* ------------------ MOBILE ------------------ */
+/* ------------------ MOBILE ------------------ */
+/* ------------------ MOBILE ------------------ */
 @media (max-width: 600px) {
+    .nav-container {
+        flex-wrap: wrap;
+        min-height: 70px; /* Changed from height to min-height */
+        height: auto; /* Allow container to grow */
+    }
+    
     .nav-left,
     .nav-right {
         display: none; /* hide links initially */
@@ -215,10 +223,9 @@ body{
         text-align: center;
         gap: 12px;
         background: rgb(21, 21, 21);
-        position: absolute;
-        top: 70px; /* navbar height */
-        left: 0;
+        position: relative;
         padding: 10px 0;
+        order: 3;
     }
 
     .nav-left.active,
@@ -231,8 +238,7 @@ body{
         display: block;
         position: absolute;
         right: 16px;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 21px; /* Fixed position instead of % */
         z-index: 1000;
     }
 
@@ -240,8 +246,8 @@ body{
     .nav-logo {
         position: absolute;
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        top: 21px; /* Fixed position instead of % */
+        transform: translateX(-50%); /* Only translate X */
     }
 }
 /*NAVBAR END*/

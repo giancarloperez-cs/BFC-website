@@ -57,14 +57,14 @@
     <!-- BOOTSTRAP SCRIPT -->
     <script src="cdn.jsdelivr.net" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-        const toggleButton = document.querySelector('.mobile-toggle');
+        const mobileToggle = document.querySelector('.mobile-toggle');
         const navLeft = document.querySelector('.nav-left');
         const navRight = document.querySelector('.nav-right');
 
-        toggleButton.addEventListener('click', () => {
+        mobileToggle.addEventListener('click', function() {
             navLeft.classList.toggle('active');
             navRight.classList.toggle('active');
-});
-</script>
+        });
+    </script>
 </body>
 </html>
