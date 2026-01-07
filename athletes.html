@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FRICONIX ICONS-->
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--FONTS (OSWALD, ANTON, ROBOTO CONDENSED)-->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>BFC - Athletes</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="nav">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">
+                <img src="bfc-assets/BFC-logo-white.png" alt="BFC logo">
+            </a>
+
+            <button class="mobile-toggle" onclick="document.getElementById('mobileMenu').classList.toggle('open'); this.textContent = this.textContent === '☰' ? '✕' : '☰';">☰</button>
+            
+            <nav class="nav-left">
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="rankings.html" class="nav-link">Rankings</a>
+                <a href="athletes.html" class="nav-link active">Athletes</a>
+                <a href="news.html" class="nav-link">News</a>
+            </nav>
+
+            <nav class="nav-right">
+                <a href="connect.html" class="nav-link">Connect</a>
+                <a href="watch.html" class="nav-link">Watch</a>
+                <a href="podcasts.html" class="nav-link">Podcasts</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="events.html">Events</a>
+            <a href="rankings.html">Rankings</a>
+            <a href="athletes.html">Athletes</a>
+            <a href="news.html">News</a>
+            <a href="connect.html">Connect</a>
+            <a href="watch.html">Watch</a>
+            <a href="podcasts.html">Podcasts</a>
+            <a href="shop.html">Shop</a>
+        </div>
+    </header>
+
+    <!-- ATHLETES TITLE -->
+    <section class="athletes-title-section">
+        <h1 class="athletes-main-title">BFC ROSTER</h1>
+    </section>
+
+    <!-- ATHLETES GRID -->
+    <section class="athletes-section">
+        <div class="container">
+            <div class="athletes-grid">
+                
+                <!-- Fighters with Cards -->
+                <div class="athlete-card">
+                    <img src="bfc-assets/felix-card.jpg" alt="Felix Fischer" class="athlete-card-img">
+                    <div class="athlete-info">
+                        <h3>FELIX GARCIA</h3>
+                        <p class="division">RANK #2</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card">
+                    <img src="bfc-assets/adolfo-card.jpg" alt="Adolfo" class="athlete-card-img">
+                    <div class="athlete-info">
+                        <h3>A.J OROZCO</h3>
+                        <p class="division">RANK #5</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card">
+                    <img src="bfc-assets/aldo-card.png" alt="Aldo Mendieta" class="athlete-card-img">
+                    <div class="athlete-info">
+                        <h3>ALDO MENDIETA</h3>
+                        <p class="division">RANK #1</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card">
+                    <img src="bfc-assets/giancarlo-card.jpg" alt="Giancarlo Perez" class="athlete-card-img" style="transform: scaleX(-1);">
+                    <div class="athlete-info">
+                        <h3>GIANCARLO PEREZ</h3>
+                        <p class="division">RANK #3</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card">
+                    <img src="bfc-assets/ramon-card.jpg" alt="Ramon Lopez" class="athlete-card-img">
+                    <div class="athlete-info">
+                        <h3>RAMON LOPEZ</h3>
+                        <p class="division">UNRANKED</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card">
+                    <img src="bfc-assets/robert-card.jpg" alt="Robert Jones" class="athlete-card-img">
+                    <div class="athlete-info">
+                        <h3>ROBERT MURILLO</h3>
+                        <p class="division">RANK #6</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card">
+                    <img src="bfc-assets/ryan-card.jpg" alt="Ryan Smith" class="athlete-card-img">
+                    <div class="athlete-info">
+                        <h3>RYAN SEQUEN</h3>
+                        <p class="division">RANK #7</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card">
+                    <img src="bfc-assets/fischer-card.jpg" alt="Daniel Fischer" class="athlete-card-img">
+                    <div class="athlete-info">
+                        <h3>DANIEL FISCHER</h3>
+                        <p class="division">UNRANKED</p>
+                    </div>
+                </div>
+
+                <!-- Fighters with Faces (Styled differently or fitted) -->
+                 <div class="athlete-card">
+                    <div class="face-img-container">
+                        <img src="bfc-assets/cesar-face.png" alt="Cesar" class="athlete-face-img">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>CESAR PEREZ</h3>
+                        <p class="division">RANK #8</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card">
+                    <div class="face-img-container">
+                        <img src="bfc-assets/max-ramos-profile.png" alt="Max Ramos" class="athlete-face-img">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>MAX RAMOS</h3>
+                        <p class="division">UNRANKED</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card">
+                    <div class="face-img-container">
+                        <img src="bfc-assets/rudy-face.png" alt="Rudy" class="athlete-face-img">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>RUDY GALLARDO</h3>
+                        <p class="division">RANK #4</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <img src="bfc-assets/BFC-logo-white.png" alt="BFC Logo" class="footer-logo">
+            <div class="footer-tagline">WHERE LEGENDS ARE MADE</div>
+            <p>&copy; 2026 BRUTAL FORCE COMBAT</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
