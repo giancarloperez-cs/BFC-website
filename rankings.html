@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <!--FRICONIX ICONS-->
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <!--BOOTSTRAP-->
+    <link href="cdn.jsdelivr.net" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--FONTS (OSWALD, ANTON, ROBOTO CONDENSED)-->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>BFC</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="nav">
+        <div class="nav-container">
+            <nav class="nav-left">
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="rankings.html" class="nav-link">Rankings</a>
+                <a href="athletes.html" class="nav-link">Athletes</a>
+                <a href="news.html" class="nav-link">News</a>
+            </nav>
+
+            <a class="nav-logo" href="index.html">
+                <img src="bfc-assets/BFC-logo-white.png" alt="BFC logo">
+            </a>
+
+            <nav class="nav-right">
+                <a href="connect.html" class="nav-link">Connect</a>
+                <a href="watch.html" class="nav-link">Watch</a>
+                <a href="podcasts.html" class="nav-link">Podcasts</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+            </nav>
+
+            <button class="mobile-toggle">☰</button>
+        </div>
+    </header>
+
+    <!-- RANKINGS SECTION -->
+    <section class="rankings-section">
+        <div class="rankings-container">
+            <h1 class="rankings-main-title">ATHLETE RANKINGS</h1>
+
+            <!-- TOP RANK FEATURED -->
+            <div class="top-rank-featured">
+                <div class="rank-category">
+                    <span class="category-label">MEN'S POUND-FOR-POUND</span>
+                    <span class="rank-label">TOP RANK</span>
+                </div>
+                <h2 class="champion-name">ALDO "IVERSONBEAT" MENDIETA</h2>
+                <div class="champion-image-container">
+                    <img src="bfc-assets/aldo-card.png" alt="Aldo Mendieta" class="champion-image">
+                </div>
+            </div>
+
+            <!-- RANKINGS LIST -->
+            <div class="rankings-list">
+                <div class="rank-item">
+                    <span class="rank-number">1</span>
+                    <img src="bfc-assets/aldo-face.png" alt="Aldo Mendieta" class="rank-fighter-image">
+                    <span class="rank-fighter-name">ALDO MENDIETA</span>
+                </div>
+
+                <div class="rank-item">
+                    <span class="rank-number">2</span>
+                    <img src="bfc-assets/felix-face.png" alt="Felix Garcia" class="rank-fighter-image">
+                    <span class="rank-fighter-name">FELIX GARCIA</span>
+                </div>
+
+                <div class="rank-item">
+                    <span class="rank-number">3</span>
+                    <img src="bfc-assets/giancarlo-face.png" alt="Giancarlo Perez" class="rank-fighter-image">
+                    <span class="rank-fighter-name">GIANCARLO PEREZ</span>
+                </div>
+
+                <div class="rank-item">
+                    <span class="rank-number">4</span>
+                    <img src="bfc-assets/BFC-logo-black.png" alt="Ryan Fischer" class="rank-fighter-image">
+                    <span class="rank-fighter-name">placeholder</span>
+                </div>
+
+                <div class="rank-item">
+                    <span class="rank-number">5</span>
+                    <img src="bfc-assets/BFC-logo-black.png" alt="AJ" class="rank-fighter-image">
+                    <span class="rank-fighter-name">placeholder</span>
+                </div>
+
+                <div class="rank-item">
+                    <span class="rank-number">6</span>
+                    <img src="bfc-assets/BFC-logo-black.png" alt="Giancarlo" class="rank-fighter-image">
+                    <span class="rank-fighter-name">placeholder </span>
+                </div>
+
+                <div class="rank-item">
+                    <span class="rank-number">7</span>
+                    <img src="bfc-assets/BFC-logo-black.png" alt="Adolfo" class="rank-fighter-image">
+                    <span class="rank-fighter-name">placeholder </span>
+                </div>
+
+                <div class="rank-item">
+                    <span class="rank-number">8</span>
+                    <img src="bfc-assets/BFC-logo-black.png" alt="Ramon" class="rank-fighter-image">
+                    <span class="rank-fighter-name">placeholder</span>
+                </div>
+
+                <div class="rank-item">
+                    <span class="rank-number">9</span>
+                    <img src="bfc-assets/BFC-logo-black.png" alt="Fischer" class="rank-fighter-image">
+                    <span class="rank-fighter-name">placeholder</span>
+                </div>
+
+                <div class="rank-item">
+                    <span class="rank-number">10</span>
+                    <img src="bfc-assets/BFC-logo-black.png" alt="Fighter" class="rank-fighter-image">
+                    <span class="rank-fighter-name">placeholder </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="cdn.jsdelivr.net" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLeft = document.querySelector('.nav-left');
+        const navRight = document.querySelector('.nav-right');
+
+        mobileToggle.addEventListener('click', function() {
+            navLeft.classList.toggle('active');
+            navRight.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

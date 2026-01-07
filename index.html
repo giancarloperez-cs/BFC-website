@@ -17,10 +17,10 @@
     <header class="nav">
         <div class="nav-container">
             <nav class="nav-left">
-                <a href="about.html" class="nav-link">Events</a>
-                <a href="services.html" class="nav-link">Rankings</a>
-                <a href="contact.html" class="nav-link">Athletes</a>
-                <a href="contact.html" class="nav-link">News</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="rankings.html" class="nav-link">Rankings</a>
+                <a href="athletes.html" class="nav-link">Athletes</a>
+                <a href="news.html" class="nav-link">News</a>
             </nav>
 
             <a class="nav-logo" href="#">
@@ -28,10 +28,10 @@
             </a>
 
             <nav class="nav-right">
-                <a href="about.html" class="nav-link">Connect</a>
-                <a href="services.html" class="nav-link">Watch</a>
-                <a href="contact.html" class="nav-link">Podcasts</a>
-                <a href="contact.html" class="nav-link">Shop</a>
+                <a href="connect.html" class="nav-link">Connect</a>
+                <a href="watch.html" class="nav-link">Watch</a>
+                <a href="podcasts.html" class="nav-link">Podcasts</a>
+                <a href="shop.html" class="nav-link">Shop</a>
             </nav>
 
             <button class="mobile-toggle">☰</button>
@@ -40,19 +40,189 @@
 
     <!-- HERO IMAGE + CARD SECTION -->
     <section class="hero-card-section">
-        <div class="top-image-wrapper">
-            <img src="bfc-assets/felix-fischer-hero-card.jpg" alt="hero" class="top-image">
-        </div>
-        <div class="container card-wrapper">
-            <div class="under-card">
-                <div class="card p-3" id="spotlight-card">
-                    <h3>BFC Debut Spotlight: Garcia & Fischer</h3>
-                    <p>Two hungry newcomers step into the BFC cage for the first time as Felix Garcia and Daniel Fischer prepare to showcase their skills on their debut night. Garcia enters with a reputation for explosive striking and relentless forward pressure, while Fischer still has yet to bring his well-rounded crafted arsenal and calm technical composure. Both fighters see this matchup as their first opportunity to make a statement in the organization. With contrasting styles and equal determination, their debut promises to set the tone for the next generation of BFC contenders.</p>
-                    <a href="https://www.youtube.com/@Gmendemon" class="watch-button">WATCH NOW</a>
+        <div class="hero-content-wrapper">
+            <div class="hero-left">
+                <div class="top-image-wrapper">
+                    <img src="bfc-assets/felix-fischer-hero-card.jpg" alt="hero" class="top-image">
+                </div>
+                <div class="container card-wrapper">
+                    <div class="under-card">
+                        <div class="card p-3" id="spotlight-card">
+                            <h3>BFC Debut Spotlight: Garcia & Fischer</h3>
+                            <p>Two hungry newcomers step into the BFC cage for the first time as Felix Garcia and Daniel Fischer prepare to showcase their skills on their debut night. Garcia enters with a reputation for explosive striking and relentless forward pressure, while Fischer still has yet to bring his well-rounded crafted arsenal and calm technical composure. Both fighters see this matchup as their first opportunity to make a statement in the organization. With contrasting styles and equal determination, their debut promises to set the tone for the next generation of BFC contenders.</p>
+                            <a href="https://www.youtube.com/@Gmendemon" class="watch-button">WATCH NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO CAROUSEL -->
+            <div class="video-carousel-wrapper">
+                <div class="carousel-header">
+                    <h3 class="carousel-title">Latest Highlights</h3>
+                </div>
+                <div class="video-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide active">
+                            <div class="video-thumbnail" data-video-id="wzEelaCWr9k">
+                                <img src="https://img.youtube.com/vi/wzEelaCWr9k/maxresdefault.jpg" alt="Video thumbnail">
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="video-info">
+                                <h4>BFC ONE: GARCIA VS MURILLO</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="video-thumbnail" data-video-id="TNpc9j2b-Gc">
+                                <img src="https://img.youtube.com/vi/TNpc9j2b-Gc/maxresdefault.jpg" alt="Video thumbnail">
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="video-info">
+                                <h4>BFC ONE: SEQUEN VS PEREZ</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="video-thumbnail" data-video-id="yBJdXjcjIno">
+                                <img src="https://img.youtube.com/vi/yBJdXjcjIno/maxresdefault.jpg" alt="Video thumbnail">
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="video-info">
+                                <h4>HAMON VS AJ</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" aria-label="Previous video">‹</button>
+                    <button class="carousel-btn next" aria-label="Next video">›</button>
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+
+            <!-- REELS CAROUSEL -->
+            <div class="reels-carousel-wrapper">
+                <div class="carousel-header">
+                    <h3 class="carousel-title">BFC Reels</h3>
+                </div>
+                <div class="reels-carousel">
+                    <div class="reels-container">
+                        <div class="reel-slide active">
+                            <video src="bfc-assets/welcome-to-bfc-reel.mp4" playsinline loop muted></video>
+                            <div class="reel-info">
+                                <h4>Welcome to BFC</h4>
+                            </div>
+                        </div>
+                        <div class="reel-slide">
+                            <video src="bfc-assets/youre-fucked-reel.mp4" playsinline loop muted></video>
+                            <div class="reel-info">
+                                <h4>You're F*cked When...</h4>
+                            </div>
+                        </div>
+                        <div class="reel-slide">
+                            <video src="bfc-assets/aj-grappling-reel.mp4" playsinline loop muted></video>
+                            <div class="reel-info">
+                                <h4>AJ's Grappling</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="reel-btn prev" aria-label="Previous reel">‹</button>
+                    <button class="reel-btn next" aria-label="Next reel">›</button>
+                    <button class="reel-mute-btn" aria-label="Toggle sound">
+                        <span class="muted-icon">🔇</span>
+                        <span class="unmuted-icon" style="display: none;">🔊</span>
+                    </button>
+                    <div class="reel-dots"></div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- FIGHT CARDS SECTION -->
+    <section class="fight-cards-section">
+        <div class="fight-cards-container">
+            <!-- JUST HAPPENED CARD -->
+            <div class="fight-card">
+                <div class="fight-status">JUST HAPPENED</div>
+                <div class="fighters-container">
+                    <div class="fighter-image-box">
+                        <img src="bfc-assets/robert-card.jpg" alt="Fighter 1" class="fighter-image">
+                    </div>
+                    <div class="fighter-image-box">
+                        <img src="bfc-assets/felix-card.jpg" alt="Fighter 2" class="fighter-image">
+                    </div>
+                </div>
+                <div class="fight-info">
+                    <h2 class="fight-title">FELIX VS<br>MURILLO</h2>
+                    <div class="event-logo">
+                        <img src="bfc-assets/BFC-logo-white.png" alt="BFC Logo" class="event-logo-img">
+                        <div class="event-number">ONE</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UP NEXT CARD -->
+            <div class="fight-card">
+                <div class="fight-status">JUST HAPPENED</div>
+                <div class="fighters-container">
+                    <div class="fighter-image-box">
+                        <img src="bfc-assets/giancarlo-card.jpg" alt="Fighter 3" class="fighter-image">
+                    </div>
+                    <div class="fighter-image-box">
+                        <img src="bfc-assets/ryan-card.jpg" alt="Fighter 4" class="fighter-image">
+                    </div>
+                </div>
+                <div class="fight-info">
+                    <h2 class="fight-title">GIANCARLO VS<br>JAVI</h2>
+                    <div class="event-logo">
+                        <img src="bfc-assets/BFC-logo-white.png" alt="BFC Logo" class="event-logo-img">
+                        <div class="event-number">ONE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fight-cards-container">
+            <!-- JUST HAPPENED CARD -->
+            <div class="fight-card">
+                <div class="fight-status">UP NEXT</div>
+                <div class="fighters-container">
+                    <div class="fighter-image-box">
+                        <img src="bfc-assets/adolfo-card.jpg" alt="Fighter 1" class="fighter-image">
+                    </div>
+                    <div class="fighter-image-box">
+                        <img src="bfc-assets/giancarlo-card.jpg" alt="Fighter 2" class="fighter-image flipped">
+                    </div>
+                </div>
+                <div class="fight-info">
+                    <h2 class="fight-title">AJ VS<br>GIANCARLO</h2>
+                    <div class="event-logo">
+                        <img src="bfc-assets/BFC-logo-white.png" alt="BFC Logo" class="event-logo-img">
+                        <div class="event-number">TWO</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UP NEXT CARD -->
+            <div class="fight-card">
+                <div class="fight-status">UP NEXT</div>
+                <div class="fighters-container">
+                    <div class="fighter-image-box">
+                        <img src="bfc-assets/ramon-card.jpg"  alt="Fighter 3" class="fighter-image flipped">
+                    </div>
+                    <div class="fighter-image-box">
+                        <img src="bfc-assets/fischer-card.jpg" alt="Fighter 4" class="fighter-image">
+                    </div>
+                </div>
+                <div class="fight-info">
+                    <h2 class="fight-title">LOPEZ VS<br>FISCHER</h2>
+                    <div class="event-logo">
+                        <img src="bfc-assets/BFC-logo-white.png" alt="BFC Logo" class="event-logo-img">
+                        <div class="event-number">TWO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="height: 50px; margin-top: 50px;">
+
+    </div>
 
     <!-- BOOTSTRAP SCRIPT -->
     <script src="cdn.jsdelivr.net" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -65,6 +235,177 @@
             navLeft.classList.toggle('active');
             navRight.classList.toggle('active');
         });
+
+        // Video Carousel
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const nextBtn = document.querySelector('.carousel-btn.next');
+        const dotsContainer = document.querySelector('.carousel-dots');
+        let currentSlide = 0;
+
+        // Create dots
+        slides.forEach((_, index) => {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(index));
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = document.querySelectorAll('.dot');
+
+        function updateSlides() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === currentSlide) {
+                    slide.classList.add('active');
+                }
+            });
+            dots.forEach((dot, index) => {
+                dot.classList.remove('active');
+                if (index === currentSlide) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlides();
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlides();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlides();
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        // YouTube Thumbnail Click Handler
+        function attachThumbnailListeners() {
+            document.querySelectorAll('.video-thumbnail').forEach(thumbnail => {
+                // Remove old listener if exists
+                const newThumbnail = thumbnail.cloneNode(true);
+                thumbnail.parentNode.replaceChild(newThumbnail, thumbnail);
+                
+                newThumbnail.addEventListener('click', function() {
+                    const videoId = this.getAttribute('data-video-id');
+                    const iframe = document.createElement('iframe');
+                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                    iframe.frameBorder = '0';
+                    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                    iframe.allowFullscreen = true;
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+                    iframe.style.border = 'none';
+                    iframe.style.position = 'absolute';
+                    iframe.style.top = '0';
+                    iframe.style.left = '0';
+                    
+                    // Replace the thumbnail container content with iframe
+                    const slideContainer = this.closest('.carousel-slide');
+                    const videoInfo = slideContainer.querySelector('.video-info');
+                    slideContainer.innerHTML = '';
+                    slideContainer.appendChild(iframe);
+                    slideContainer.appendChild(videoInfo);
+                });
+            });
+        }
+
+        // Initial attachment
+        attachThumbnailListeners();
+
+        // Auto-play (optional)
+        // setInterval(nextSlide, 5000);
+
+        // Reels Carousel
+        const reelSlides = document.querySelectorAll('.reel-slide');
+        const reelPrevBtn = document.querySelector('.reel-btn.prev');
+        const reelNextBtn = document.querySelector('.reel-btn.next');
+        const reelDotsContainer = document.querySelector('.reel-dots');
+        let currentReel = 0;
+
+        // Create reel dots
+        reelSlides.forEach((_, index) => {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToReel(index));
+            reelDotsContainer.appendChild(dot);
+        });
+
+        const reelDots = document.querySelectorAll('.reel-dots .dot');
+        const reelVideos = document.querySelectorAll('.reel-slide video');
+
+        function updateReels() {
+            reelSlides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                const video = slide.querySelector('video');
+                video.pause();
+                video.currentTime = 0;
+                
+                if (index === currentReel) {
+                    slide.classList.add('active');
+                    video.play().catch(e => console.log('Autoplay prevented'));
+                }
+            });
+            reelDots.forEach((dot, index) => {
+                dot.classList.remove('active');
+                if (index === currentReel) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+
+        function goToReel(index) {
+            currentReel = index;
+            updateReels();
+        }
+
+        function nextReel() {
+            currentReel = (currentReel + 1) % reelSlides.length;
+            updateReels();
+        }
+
+        function prevReel() {
+            currentReel = (currentReel - 1 + reelSlides.length) % reelSlides.length;
+            updateReels();
+        }
+
+        reelNextBtn.addEventListener('click', nextReel);
+        reelPrevBtn.addEventListener('click', prevReel);
+
+        // Mute/Unmute Toggle
+        const muteBtn = document.querySelector('.reel-mute-btn');
+        const mutedIcon = document.querySelector('.muted-icon');
+        const unmutedIcon = document.querySelector('.unmuted-icon');
+        let isMuted = true;
+
+        muteBtn.addEventListener('click', function() {
+            isMuted = !isMuted;
+            reelVideos.forEach(video => {
+                video.muted = isMuted;
+            });
+            
+            if (isMuted) {
+                mutedIcon.style.display = 'inline';
+                unmutedIcon.style.display = 'none';
+            } else {
+                mutedIcon.style.display = 'none';
+                unmutedIcon.style.display = 'inline';
+            }
+        });
+
+        // Auto-play first reel
+        if (reelVideos.length > 0) {
+            reelVideos[0].play().catch(e => console.log('Autoplay prevented'));
+        }
     </script>
 </body>
 </html>
